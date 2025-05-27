@@ -1,0 +1,339 @@
+/* SVNIT Navbar Styles */
+.svnit-navbar {
+    background: #003366;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    height: 62px;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.nav-logo img {
+    height: 40px;
+    margin-right: 12px;
+}
+
+.nav-logo span {
+    display: none;
+    font-size: 1.05rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+@media (min-width: 700px) {
+    .nav-logo span {
+        display: inline;
+    }
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-left: 22px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.2s;
+    padding: 8px 0;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+    color: #ffcb05;
+    border-bottom: 2px solid #ffcb05;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff;
+    user-select: none;
+    margin-left: 16px;
+}
+
+@media (max-width: 900px) {
+    .nav-container {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 0 8px;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        background: #003366;
+        display: none;
+        margin-top: 12px;
+    }
+    .nav-links li {
+        margin: 0 0 12px 0;
+        text-align: left;
+    }
+    .nav-toggle:checked + .nav-toggle-label + .nav-links {
+        display: flex;
+    }
+    .nav-toggle-label {
+        display: block;
+    }
+}
+
+/* Main Content Styles */
+body {
+    background: #f5f6fa;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 24px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 6px 24px rgba(0,51,102,0.07);
+}
+
+.main-heading {
+    color: #003366;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 32px;
+    border-left: 6px solid #003366;
+    padding-left: 14px;
+    letter-spacing: 1px;
+}
+
+.faculty-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: flex-start;
+}
+
+.faculty-card {
+    background: #f9fbfd;
+    border: 1px solid #d0d8e8;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,51,102,0.03);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 430px;
+    min-width: 300px;
+    padding: 18px 16px;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.faculty-card:hover {
+    box-shadow: 0 8px 32px rgba(0,51,102,0.10);
+    transform: translateY(-4px) scale(1.02);
+    border-color: #003366;
+}
+
+.faculty-img {
+    width: 88px;
+    height: 88px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #003366;
+    margin-right: 18px;
+    background: #e0e6ef;
+}
+
+.faculty-info {
+    flex: 1;
+}
+
+.faculty-name {
+    font-size: 1.34rem;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 2px;
+}
+
+.faculty-role {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #205080;
+    margin-bottom: 2px;
+}
+
+.faculty-email {
+    font-size: 0.97rem;
+    color: #165ef0;
+    margin-bottom: 6px;
+}
+
+.faculty-desc {
+    font-size: 0.97rem;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.faculty-link a {
+    color: #003366;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 0.98rem;
+    transition: color 0.2s;
+}
+.faculty-link a:hover {
+    color: #205080;
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .faculty-list {
+        flex-direction: column;
+        gap: 18px;
+    }
+    .faculty-card {
+        max-width: 100%;
+    }
+}
+
+/* SVNIT Footer Styles (as in screenshot) */
+.svnit-footer {
+    background: #232b36;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 48px;
+    font-size: 1rem;
+    letter-spacing: 0.1px;
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 16px 12px 16px;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.footer-col {
+    flex: 1 1 220px;
+    min-width: 180px;
+    margin-bottom: 12px;
+}
+
+.footer-title {
+    font-size: 1.08rem;
+    font-weight: bold;
+    margin-bottom: 4px;
+    color: #fff;
+}
+
+.footer-address {
+    color: #fff;
+    font-size: 0.97rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 0.97rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 3px;
+    transition: color 0.2s;
+}
+.footer-links a:hover {
+    color: #ffcb05;
+    text-decoration: underline;
+}
+
+.footer-links span {
+    color: #aaa;
+    margin: 0 3px;
+    font-weight: normal;
+}
+
+.footer-social {
+    margin-top: 8px;
+}
+.footer-social a {
+    color: #fff;
+    margin-right: 8px;
+    font-size: 1.15rem;
+    transition: color 0.2s;
+}
+.footer-social a:hover {
+    color: #ffcb05;
+}
+
+.footer-copy {
+    background: #1a1f26;
+    color: #fff;
+    text-align: center;
+    font-size: 0.98rem;
+    padding: 10px 0 8px 0;
+    margin-top: 0;
+    letter-spacing: 0.2px;
+}
+
+@media (max-width: 900px) {
+    .footer-main {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        gap: 8px;
+        padding: 22px 8px 8px 8px;
+    }
+    .footer-col {
+        min-width: 0;
+        width: 100%;
+    }
+    .footer-links {
+        gap: 6px;
+        flex-wrap: wrap;
+        margin-bottom: 8px;
+    }
+}

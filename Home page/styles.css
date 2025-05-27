@@ -16,7 +16,6 @@ header h1 {
     font-size: 3rem;
     font-weight: 700;
 }
-
 header p {
     margin: 8px 0 0 0;
     color: #e3f2fd;
@@ -101,14 +100,12 @@ footer {
     box-shadow: 0 1px 6px rgba(26,35,126,0.06);
     padding: 10px 0;
 }
-
 .slider-track {
     display: flex;
     gap: 0;
     width: calc(220px * 12); /* Adjust if you add more slides */
     animation: scroll 15s linear infinite;
 }
-
 .slide {
     flex: 0 0 220px;
     display: flex;
@@ -118,7 +115,6 @@ footer {
     background: transparent;
     margin: 0;
 }
-
 .slide img {
     max-height: 40px;
     max-width: 120px;
@@ -126,12 +122,10 @@ footer {
     display: block;
     margin: 0 auto;
 }
-
 @keyframes scroll {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
 }
-
 @media (max-width: 800px) {
     .stats {
         flex-direction: column;
