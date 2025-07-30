@@ -1,0 +1,113 @@
+/* Faculty Details Page Styles */
+.body {
+    background: #f5f6fa;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+}
+
+.fd-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 24px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 6px 24px rgba(0, 51, 102, 0.07);
+}
+
+.fd-main-heading {
+    color: #003366;
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 32px;
+    border-left: 6px solid #003366;
+    padding-left: 14px;
+    letter-spacing: 1px;
+}
+
+.fd-cdc-overview p {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 24px;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.fd-faculty-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: flex-start;
+}
+
+.fd-faculty-card {
+    background: #f9fbfd;
+    border: 1px solid #d0d8e8;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 51, 102, 0.03);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    min-width: 300px;
+    padding: 18px 16px;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.fd-faculty-card:hover {
+    box-shadow: 0 8px 32px rgba(0, 51, 102, 0.10);
+    transform: translateY(-4px) scale(1.02);
+    border-color: #003366;
+}
+
+.fd-faculty-img {
+    width: 88px;
+    height: 88px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #003366;
+    margin-right: 18px;
+    background: #e0e6ef;
+}
+
+.fd-faculty-info {
+    flex: 1;
+}
+
+.fd-faculty-name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 2px;
+}
+
+.fd-faculty-role {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #205080;
+    margin-bottom: 2px;
+}
+
+.fd-faculty-desc {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 8px;
+    line-height: 1.6;
+    font-weight: 500;
+    width: 100%;
+    word-wrap: break-word;
+}
+
+@media (max-width: 900px) {
+    .fd-faculty-list {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .fd-faculty-card {
+        max-width: 100%;
+    }
+}
+
+/* Footer styles can be reused from main style.css */
